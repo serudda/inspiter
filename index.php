@@ -14,32 +14,32 @@ $_SESSION['image']='';
 $_SESSION['imageSmall']='';
 
 //detecta el lenguaje del sistema
-$_SESSION['languaje'] = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2); 
+$_SESSION['languaje'] = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
 include("web/lang_".$_SESSION['languaje'].".php");
 
-if (strrpos($_SERVER['SERVER_NAME'],"inspiter.com") == 0) 
-  {header("Location:http://www.inspiter.com");}
+//if (strrpos($_SERVER['SERVER_NAME'],"inspiter.com") == 0)
+  //{header("Location:http://www.inspiter.com");}
 
 if($_GET['logout']=='ok' && $_GET['activate']=='si' && $_GET['uid']=='Y')
 {
          $result = Session::delete($_SESSION['iduser']);
          session_destroy();
          setcookie("iduser","",time()-86400);
-         setcookie("iduser","",time()-86400,"/js"); 
-         setcookie("iduser","",time()-86400,"/css"); 
+         setcookie("iduser","",time()-86400,"/js");
+         setcookie("iduser","",time()-86400,"/css");
          unset($_COOKIE["iduser"]);
-         header("location: /"); 
+         header("location: /");
 }
 else
-if (!isset($_SESSION['iduser'])) 
+if (!isset($_SESSION['iduser']))
 {
-  if (isset($_COOKIE['iduser'])==true && $_COOKIE['iduser'] != '') 
+  if (isset($_COOKIE['iduser'])==true && $_COOKIE['iduser'] != '')
   {
       $_SESSION['iduser'] = $_COOKIE['iduser'];
-      header("location: /main.php"); 
+      header("location: /main.php");
   }
 }
- else   
+ else
  {header("location: /main.php"); }
 
 ?>
@@ -103,7 +103,7 @@ if ((isset($_GET['error']) == true) && ($_GET['error'] = 'ExistUser')) {
 
         <!-- barra de navegacion
 
-        =============================================-->	  
+        =============================================-->
 
         <div class="navbar navIndex">
 
@@ -132,26 +132,26 @@ if ((isset($_GET['error']) == true) && ($_GET['error'] = 'ExistUser')) {
                 <h1><?php echo defineInspiterIndex; ?></h1>
                 <form id="logging" class="sign_up" action="web/checkLogin.php" method="post">
                     <input type="text" class="inputIndex" id="log-username" name="log-username" tabindex="1" maxlength="200" placeholder="<?php echo useroremail; ?>">
-                    <span><a id="forgot" class="textForget" href="/recuperarClave.php"><?php echo olvidaPass; ?></a></span>    
-                    <input type="password" class="inputIndex" id="log-password" name="log-password" tabindex="2" placeholder="<?php echo contrasenia; ?>">    
+                    <span><a id="forgot" class="textForget" href="/recuperarClave.php"><?php echo olvidaPass; ?></a></span>
+                    <input type="password" class="inputIndex" id="log-password" name="log-password" tabindex="2" placeholder="<?php echo contrasenia; ?>">
                     <button id="iniciar-sesion" name="iniciar-sesion" type="submit" class="special-btn facebook badge-facebook-connect LoginBtnIndex"><?php echo iniSes; ?></button>
                     <a id="auth-loginlink" name="auth-loginlink" class="special-btn facebook badge-facebook-connect faceBtnIndex" label="LoginFormFacebookButton"><?php echo iniFacebook; ?></a>
                     <div id="register-text">
                         <a class="register-btn-index" href="register.php"><?php echo registrarse; ?></a>
                     </div>
-                    
+
                 </form>
             </div>
         </div>
         <!-- END Primer bloque: Cambio de colores, frase insignia de Inspiter -->
-        
-        
-        
+
+
+
         <!-- Segundo bloque: Minitutorial, resumen de que es Inspiter -->
         <div class="containerTuto">
             <div class="row">
                     <h1 style="display: none;">
-                        <strong>Inspiter</strong> <?php echo defineInspiterIndex2; ?> 
+                        <strong>Inspiter</strong> <?php echo defineInspiterIndex2; ?>
                     </h1>
                     <ul class="BlockTextMiniTuto">
                         <li>
@@ -164,7 +164,7 @@ if ((isset($_GET['error']) == true) && ($_GET['error'] = 'ExistUser')) {
                             <span class="textMiniTuto tutotext3"><?php echo contagiaInsp; ?></span>
                         </li>
                     </ul>
-                
+
                     <ul class="BlockImgMiniTuto">
                         <li>
                             <div class="imgMiniTuto tuto1"></div>
@@ -182,12 +182,12 @@ if ((isset($_GET['error']) == true) && ($_GET['error'] = 'ExistUser')) {
                             <div class="imgMiniTuto tuto5"></div>
                         </li>
                     </ul>
-                    
+
                     <div class="separateBlock">
                         <div class="lineSeparate"></div>
                         <div class="OrText"></div>
                     </div>
-                        
+
                     <ul class="BlockImgMiniTuto">
                         <li>
                             <div class="imgMiniTuto tuto6"></div>
@@ -205,7 +205,7 @@ if ((isset($_GET['error']) == true) && ($_GET['error'] = 'ExistUser')) {
                             <div class="imgMiniTuto tuto1" style="margin-left: 22px!important;"></div>
                         </li>
                     </ul>
-                    
+
                     <ul class="BlockTextMiniTuto">
                         <li>
                             <span class="textMiniTuto tutotext1 blocktext1"><?php echo desmotivado; ?></span>
@@ -219,11 +219,11 @@ if ((isset($_GET['error']) == true) && ($_GET['error'] = 'ExistUser')) {
                     </ul>
             </div>
             <div class="tutoFase">
-                
+
             </div>
         </div>
         <!-- END Segundo bloque: Minitutorial,resumen de que es Ispiter -->
-        
+
         <!-- Tercer bloque: Lo que encontraran en Inspiter -->
         <div class="ThreeBlock">
         <div class="TitleBlock">
@@ -232,63 +232,63 @@ if ((isset($_GET['error']) == true) && ($_GET['error'] = 'ExistUser')) {
         <div id="containerImagesIndex" class="containerImagesIndex">
             <div class="ImagesIndex" style="height:330px;">
                 <img class="imageToShow" src="/images/graphIns/3a759324035.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Ariel Valles" target="_blank" href="/ArielValles">Ariel Valles</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Ariel Valles" target="_blank" href="/ArielValles">Ariel Valles</a>
                         <a id="post_avatar" class="post_avatar" title="Ariel Valles" target="_blank" href="/ArielValles" style="background-image: url('../images/perfiles/smallMenu/ArielValles_131433801.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:496px;">    
+            <div class="ImagesIndex" style="height:496px;">
                 <img class="imageToShow" src="/images/graphIns/4a731611184.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Sergio Ruiz Davila" target="_blank" href="http://www.inspiter.com/sedavila">Sergio Ruiz Davila</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Sergio Ruiz Davila" target="_blank" href="http://www.inspiter.com/sedavila">Sergio Ruiz Davila</a>
                         <a id="post_avatar" class="post_avatar" title="Sergio Ruiz Davila" target="_blank" href="http://www.inspiter.com/sedavila">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:247px;">    
+            <div class="ImagesIndex" style="height:247px;">
                 <img class="imageToShow" src="/images/graphIns/66a11815829.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Memii Lo" target="_blank" href="/emilialopez">Memii Lo</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Memii Lo" target="_blank" href="/emilialopez">Memii Lo</a>
                         <a id="post_avatar" class="post_avatar" title="Memii Lo" target="_blank" href="/emilialopez" style="background-image: url('../images/perfiles/smallMenu/emilialopez_210756248.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:219px;">    
+            <div class="ImagesIndex" style="height:219px;">
                 <img class="imageToShow" src="/images/graphIns/81a841345004.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Maru Heredia" target="_blank" href="/Maruk">Maru Heredia</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Maru Heredia" target="_blank" href="/Maruk">Maru Heredia</a>
                         <a id="post_avatar" class="post_avatar" title="Maru Heredia" target="_blank" href="/Maruk" style="background-image: url('../images/perfiles/smallMenu/Maruk_970265812.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:493px;">    
+            <div class="ImagesIndex" style="height:493px;">
                 <img class="imageToShow" src="/images/graphIns/66a911754597.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Memii Lo" target="_blank" href="/emilialopez">Memii Lo</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Memii Lo" target="_blank" href="/emilialopez">Memii Lo</a>
                         <a id="post_avatar" class="post_avatar" title="Memii Lo" target="_blank" href="/emilialopez" style="background-image: url('../images/perfiles/smallMenu/emilialopez_210756248.jpg');">
                         </a>
-                    </div> 
-                </div>    
+                    </div>
+                </div>
             </div>
             <div class="ImagesIndex TextIndex" style="height:178px;">
                 <div class="comillas-background-right">
-                    <img alt="" src="images/comillas-right.png">    
-                </div> 
+                    <img alt="" src="images/comillas-right.png">
+                </div>
                 <div class="comillas-background-left">
                     <img alt="" src="images/comillas-left.png">
                 </div>
@@ -298,63 +298,63 @@ if ((isset($_GET['error']) == true) && ($_GET['error'] = 'ExistUser')) {
                         <a class="autor-name" href="#">ANONIMO</a>
                     </div>
                 </div>
-                <div class="footerBgText"></div>    
+                <div class="footerBgText"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Sebastian Lopez" target="_blank" href="/sebii">Sebastian Lopez</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Sebastian Lopez" target="_blank" href="/sebii">Sebastian Lopez</a>
                         <a id="post_avatar" class="post_avatar" title="Sebastian Lopez" target="_blank" href="/sebii" style="background-image: url('../images/perfiles/smallMenu/sebii.jpg');">
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="ImagesIndex" style="height:239px;">        
+            <div class="ImagesIndex" style="height:239px;">
                 <img class="imageToShow" src="/images/graphIns/3a56145668.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Ariel Valles" target="_blank" href="/ArielValles">Ariel Valles</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Ariel Valles" target="_blank" href="/ArielValles">Ariel Valles</a>
                         <a id="post_avatar" class="post_avatar" title="Ariel Valles" target="_blank" href="/ArielValles" style="background-image: url('../images/perfiles/smallMenu/ArielValles_131433801.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:203px;">    
+            <div class="ImagesIndex" style="height:203px;">
                 <img class="imageToShow" src="/images/graphIns/184a748524719.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Sebastian Molina" target="_blank" href="/molinacle">Sebastian Molina</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Sebastian Molina" target="_blank" href="/molinacle">Sebastian Molina</a>
                         <a id="post_avatar" class="post_avatar" title="Sebastian Molina" target="_blank" href="/molinacle" style="background-image: url('../images/perfiles/smallMenu/molinacle.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:331px;">    
+            <div class="ImagesIndex" style="height:331px;">
                 <img class="imageToShow" src="/images/graphIns/79a143251692.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Christian Langer" target="_blank" href="/Langer">Christian Langer</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Christian Langer" target="_blank" href="/Langer">Christian Langer</a>
                         <a id="post_avatar" class="post_avatar" title="Christian Langer" target="_blank" href="/Langer" style="background-image: url('../images/perfiles/smallMenu/Langer_938774611.JPG');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:247px;">    
+            <div class="ImagesIndex" style="height:247px;">
                 <img class="imageToShow" src="/images/graphIns/66a27314901.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Memii Lo" target="_blank" href="/emilialopez">Memii Lo</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Memii Lo" target="_blank" href="/emilialopez">Memii Lo</a>
                         <a id="post_avatar" class="post_avatar" title="Memii Lo" target="_blank" href="/emilialopez" style="background-image: url('../images/perfiles/smallMenu/emilialopez_210756248.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
             <div class="ImagesIndex TextIndex" style="height:156px;">
                 <div class="comillas-background-right">
                     <img alt="" src="images/comillas-right.png">
-                </div> 
+                </div>
                 <div class="comillas-background-left">
                     <img alt="" src="images/comillas-left.png">
                 </div>
@@ -364,85 +364,85 @@ if ((isset($_GET['error']) == true) && ($_GET['error'] = 'ExistUser')) {
                         <a class="autor-name" href="#">JEAN COCTEAU</a>
                     </div>
                 </div>
-                <div class="footerBgText"></div>    
+                <div class="footerBgText"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Verónica Maza" target="_blank" href="/Veronica">Verónica Maza</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Verónica Maza" target="_blank" href="/Veronica">Verónica Maza</a>
                         <a id="post_avatar" class="post_avatar" title="Verónica Maza" target="_blank" href="/Veronica" style="background-image: url('../images/perfiles/smallMenu/Veronica.jpg');">
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="ImagesIndex" style="height:292px;">    
+            <div class="ImagesIndex" style="height:292px;">
                 <img class="imageToShow" src="/images/graphIns/66a70135505.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Memii Lo" target="_blank" href="/emilialopez">Memii Lo</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Memii Lo" target="_blank" href="/emilialopez">Memii Lo</a>
                         <a id="post_avatar" class="post_avatar" title="Memii Lo" target="_blank" href="/emilialopez" style="background-image: url('../images/perfiles/smallMenu/emilialopez_210756248.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:247px;">    
+            <div class="ImagesIndex" style="height:247px;">
                 <img class="imageToShow" src="/images/videoImageIns/6a879114833.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Gonzalo Platero" target="_blank" href="/gonzza">Gonzalo Platero</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Gonzalo Platero" target="_blank" href="/gonzza">Gonzalo Platero</a>
                         <a id="post_avatar" class="post_avatar" title="Gonzalo Platero" target="_blank" href="/gonzza" style="background-image: url('../images/perfiles/smallMenu/gonzza_480503357.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:496px;">    
+            <div class="ImagesIndex" style="height:496px;">
                 <img class="imageToShow" src="/images/graphIns/6a224320976.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Gonzalo Platero" target="_blank" href="/gonzza">Gonzalo Platero</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Gonzalo Platero" target="_blank" href="/gonzza">Gonzalo Platero</a>
                         <a id="post_avatar" class="post_avatar" title="Gonzalo Platero" target="_blank" href="/gonzza" style="background-image: url('../images/perfiles/smallMenu/gonzza_480503357.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:220px;">    
+            <div class="ImagesIndex" style="height:220px;">
                 <img class="imageToShow" src="/images/graphIns/66a981012707.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Memii Lo" target="_blank" href="/emilialopez">Memii Lo</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Memii Lo" target="_blank" href="/emilialopez">Memii Lo</a>
                         <a id="post_avatar" class="post_avatar" title="Memii Lo" target="_blank" href="/emilialopez" style="background-image: url('../images/perfiles/smallMenu/emilialopez_210756248.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:473px;">        
+            <div class="ImagesIndex" style="height:473px;">
                 <img class="imageToShow" src="/images/graphIns/93a11164054.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Roxi" target="_blank" href="/roxi.penaloza">Roxi</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Roxi" target="_blank" href="/roxi.penaloza">Roxi</a>
                         <a id="post_avatar" class="post_avatar" title="Roxi" target="_blank" href="/roxi.penaloza" style="background-image: url('../images/perfiles/smallMenu/roxi.penaloza.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:247px;">    
+            <div class="ImagesIndex" style="height:247px;">
                 <img class="imageToShow" src="/images/videoImageIns/181a99032910.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Gabriela Montoya A." target="_blank" href="/GabyMontoya">Gabriela Montoya A.</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Gabriela Montoya A." target="_blank" href="/GabyMontoya">Gabriela Montoya A.</a>
                         <a id="post_avatar" class="post_avatar" title="Gabriela Montoya A." target="_blank" href="/GabyMontoya" style="background-image: url('../images/perfiles/smallMenu/GabyMontoya_745658780.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
             <div class="ImagesIndex TextIndex" style="height:156px;">
                 <div class="comillas-background-right">
                     <img alt="" src="images/comillas-right.png">
-                </div> 
+                </div>
                 <div class="comillas-background-left">
                     <img alt="" src="images/comillas-left.png">
                 </div>
@@ -452,41 +452,41 @@ if ((isset($_GET['error']) == true) && ($_GET['error'] = 'ExistUser')) {
                         <a class="autor-name" href="#">ANONIMO</a>
                     </div>
                 </div>
-                <div class="footerBgText"></div>    
+                <div class="footerBgText"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Laura" target="_blank" href="/Laura">Laura</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Laura" target="_blank" href="/Laura">Laura</a>
                         <a id="post_avatar" class="post_avatar" title="/Laura" target="_blank" href="/Laura" style="background-image: url('../images/perfiles/smallMenu/Laura_359002177.jpg');">
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="ImagesIndex" style="height:466px;">    
+            <div class="ImagesIndex" style="height:466px;">
                 <img class="imageToShow" src="/images/graphIns/66a694701568.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Memii Lo" target="_blank" href="/emilialopez">Memii Lo</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Memii Lo" target="_blank" href="/emilialopez">Memii Lo</a>
                         <a id="post_avatar" class="post_avatar" title="Memii Lo" target="_blank" href="/emilialopez" style="background-image: url('../images/perfiles/smallMenu/emilialopez_210756248.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:330px;">    
+            <div class="ImagesIndex" style="height:330px;">
                 <img class="imageToShow" src="/images/graphIns/4a94113446.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Sergio Ruiz Davila" target="_blank" href="http://www.inspiter.com/sedavila">Sergio Ruiz Davila</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Sergio Ruiz Davila" target="_blank" href="http://www.inspiter.com/sedavila">Sergio Ruiz Davila</a>
                         <a id="post_avatar" class="post_avatar" title="Sergio Ruiz Davila" target="_blank" href="http://www.inspiter.com/sedavila">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
             <div class="ImagesIndex TextIndex" style="height:155px;">
                 <div class="comillas-background-right">
                     <img alt="" src="images/comillas-right.png">
-                </div> 
+                </div>
                 <div class="comillas-background-left">
                     <img alt="" src="images/comillas-left.png">
                 </div>
@@ -496,99 +496,99 @@ if ((isset($_GET['error']) == true) && ($_GET['error'] = 'ExistUser')) {
                         <a class="autor-name" href="#">ANONIMO</a>
                     </div>
                 </div>
-                <div class="footerBgText"></div>    
+                <div class="footerBgText"></div>
                 <div class="posted_by thumbIndex">
                       <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Federico Gonzalez" target="_blank" href="/federico.gonzalez.7771">Federico Gonzalez</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Federico Gonzalez" target="_blank" href="/federico.gonzalez.7771">Federico Gonzalez</a>
                         <a id="post_avatar" class="post_avatar" title="Federico Gonzalez" target="_blank" href="/federico.gonzalez.7771" style="background-image: url('../images/perfiles/smallMenu/federico.gonzalez.7771.jpg');">
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="ImagesIndex" style="height:219px;">    
+            <div class="ImagesIndex" style="height:219px;">
                 <img class="imageToShow" src="/images/graphIns/81a346185557.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Maru Heredia" target="_blank" href="/Maruk">Maru Heredia</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Maru Heredia" target="_blank" href="/Maruk">Maru Heredia</a>
                         <a id="post_avatar" class="post_avatar" title="Maru Heredia" target="_blank" href="/Maruk" style="background-image: url('../images/perfiles/smallMenu/Maruk_970265812.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:190px;">    
+            <div class="ImagesIndex" style="height:190px;">
                 <img class="imageToShow" src="/images/graphIns/3a832985720.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Ariel Valles" target="_blank" href="/ArielValles">Ariel Valles</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Ariel Valles" target="_blank" href="/ArielValles">Ariel Valles</a>
                         <a id="post_avatar" class="post_avatar" title="Ariel Valles" target="_blank" href="/ArielValles" style="background-image: url('../images/perfiles/smallMenu/ArielValles_131433801.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:409px;">    
+            <div class="ImagesIndex" style="height:409px;">
                 <img class="imageToShow" src="/images/graphIns/24a34064802.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por gera" target="_blank" href="/chavexx">gera</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por gera" target="_blank" href="/chavexx">gera</a>
                         <a id="post_avatar" class="post_avatar" title="gera" target="_blank" href="/chavexx" style="background-image: url('../images/perfiles/smallMenu/chavexx.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:233px;">    
+            <div class="ImagesIndex" style="height:233px;">
                 <img class="imageToShow" src="/images/graphIns/66a454257475.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Memii Lo" target="_blank" href="/emilialopez">Memii Lo</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Memii Lo" target="_blank" href="/emilialopez">Memii Lo</a>
                         <a id="post_avatar" class="post_avatar" title="Memii Lo" target="_blank" href="/emilialopez" style="background-image: url('../images/perfiles/smallMenu/emilialopez_210756248.jpg');">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:251px;">    
+            <div class="ImagesIndex" style="height:251px;">
                 <img class="imageToShow" src="/images/graphIns/4a59068041.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Sergio Ruiz Davila" target="_blank" href="http://www.inspiter.com/sedavila">Sergio Ruiz Davila</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Sergio Ruiz Davila" target="_blank" href="http://www.inspiter.com/sedavila">Sergio Ruiz Davila</a>
                         <a id="post_avatar" class="post_avatar" title="Sergio Ruiz Davila" target="_blank" href="http://www.inspiter.com/sedavila">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="ImagesIndex" style="height:206px;">    
+            <div class="ImagesIndex" style="height:206px;">
                 <img class="imageToShow" src="/images/graphIns/4a972807772.jpg">
-                <div class="footerBg"></div>    
+                <div class="footerBg"></div>
                 <div class="posted_by thumbIndex">
                     <div class="post_info">
-                        <?php echo compartidoPor; ?> <a title="Publicado por Sergio Ruiz Davila" target="_blank" href="http://www.inspiter.com/sedavila">Sergio Ruiz Davila</a>        
+                        <?php echo compartidoPor; ?> <a title="Publicado por Sergio Ruiz Davila" target="_blank" href="http://www.inspiter.com/sedavila">Sergio Ruiz Davila</a>
                         <a id="post_avatar" class="post_avatar" title="Sergio Ruiz Davila" target="_blank" href="http://www.inspiter.com/sedavila">
                         </a>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
         <div class="TitleBlockFooter">
             <div class="wraptext">
                 <span><?php echo muchasInspmas; ?></span>
             </div>
-        </div>    
+        </div>
     </div>
         <!-- END Tercer bloque: Lo que encontraras en Inspiter -->
-        
+
         <!-- Cuarto bloque: Frases Graficas -->
         <div class="containerTuto BlockPhraseGraph">
-            
+
             <div class="textInviteBlock">
                     <h1><?php echo crearfrasegrafica; ?></h1>
                     <h2><?php echo colocaFondo; ?></h2>
                     <h2>:o</h2>
                 </div>
-            
+
             <div class="ContainerPhraseGraph">
                 <div class="EditPhrase">
                     <div class="TitleEditPhrase">
@@ -618,11 +618,11 @@ if ((isset($_GET['error']) == true) && ($_GET['error'] = 'ExistUser')) {
             </div>
         </div>
         <!-- END Cuarto bloque: Frases Graficas -->
-        
-        
-        
+
+
+
         <!-- Quinto bloque: Invitación a registrarse -->
-        
+
         <div class="InviteRegiterBlock">
             <div class="innerBlock">
                 <div class="textInviteBlock">
@@ -634,9 +634,9 @@ if ((isset($_GET['error']) == true) && ($_GET['error'] = 'ExistUser')) {
                 </div>
             </div>
         </div>
-        
+
         <!-- END Quinto bloque: Invitación a registrarse -->
-        
+
         <!-- bloque principal (imagen, frase randomica)
 
         =============================================-->
@@ -695,9 +695,9 @@ if ((isset($_GET['error']) == true) && ($_GET['error'] = 'ExistUser')) {
                                 <a href="contactenos.php"><?php echo contact; ?></a>
 
                             </li>
-                                    
+
                             <li>                                                                                                                                                                                                             <a id="footerSiteFace" href="http://www.facebook.com/InspiterOficial" target="_blank"><span>Facebook</span></a>
-                                        
+
                                 <a id="footerSiteTwitter" href="https://twitter.com/InspiterOficial" target="_blank"><span>Twitter</span></a>
 
                             </li>
@@ -706,7 +706,7 @@ if ((isset($_GET['error']) == true) && ($_GET['error'] = 'ExistUser')) {
 
                 </div>
 
-            </div>	
+            </div>
 
         </div>
 
@@ -723,11 +723,11 @@ if ((isset($_GET['error']) == true) && ($_GET['error'] = 'ExistUser')) {
     <script type="text/javascript" src="js/bootstrap-collapse.js"></script>
 
     <script type="text/javascript" src="js/loginFace.js"></script>
-    
+
     <script type="text/javascript" src="js/layoutColumn.js"></script>
-    
-    <script type="text/javascript" src="js/indexNew.js"></script>    
-    
+
+    <script type="text/javascript" src="js/indexNew.js"></script>
+
  </body>
 
 </html>
