@@ -1,0 +1,52 @@
+/* 
+    Document   : style-search
+    Created on : 18/11/2012, 05:53:36 PM
+    Author     : Inspiter
+    Description:
+        Describe los estilos unicos de la pagina "search.php"
+*/
+
+.titleResult { 
+    font-size: 20px;
+    line-height: 59px;
+    color: #fff;
+    font-weight: normal;
+		margin-left: 15px;
+}
+
+#ico-result{
+   background-image: url("../images/iconsIns.png");
+    background-repeat: no-repeat;
+    background-position: 0 -83px;
+    float: left;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 16px;
+    width: 30px;
+}
+
+
+
+#ico-result-phrase, #ico-result-people, #ico-result-autor{
+  background-image: url("../images/iconsIns.png");
+    background-position: -62px -21px;
+    background-repeat: no-repeat;
+    float: left;
+    height: 13px;
+    margin-right: 10px;
+    margin-top: 3px;
+    width: 13px;
+}
+
+.titleFilterPos{
+    
+}
+
+.titleFilterPos h4{
+    color: #E5E5E5;
+    font-family: calibri;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-left: 28px;
+    
+}

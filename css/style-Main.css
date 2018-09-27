@@ -1,0 +1,122 @@
+
+
+#NecSpace{
+ height: 92px;
+}
+
+#content-main {
+/*padding-top: 140px;*/
+width:535px;
+/*margin-left:230px;*/
+}
+
+#MaProIn{
+   background-color: white;
+    border: 3px solid #6DBD60;
+    height: 130px;
+    margin: 35px 0 300px -5px;
+    width: 310px; 
+}
+
+#nav-menu-main{
+margin-bottom: 0;
+    margin-left: 10px;
+    margin-top: 11px;
+}
+
+#content-menuPhrase ul li.active-menu{
+	
+    border: 1px solid #222222;
+    box-shadow: 1px 2px 10px 4px rgba(0, 0, 0, 5) inset;
+    text-decoration: none;
+}
+
+#content-menuPhrase ul li.active-menu:hover{
+	
+    background-color: 1px 2px 10px 4px rgba(0, 0, 0, 0) inset;
+    margin-top: 0;
+}
+
+.active-menu a{ 
+color: #FFF!important;
+}
+
+#nav-menu-main a{
+-moz-transition: all 250ms linear 0s;
+-webkit-transition:all 250ms linear 0s;
+    color: #979797;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+        outline: none;
+}
+
+#nav-menu-main li:hover{
+background-color: #252525;
+margin-top: 1px;
+}
+
+
+
+/*TODO: BOTON SEGUIR, SIGUIENDO, DEJAR DE SEGUIR PARA CUANDO ESTAS EN EL PERFIL DE OTRO. PASAR ESTE CODIGO A PROFILE*/
+
+.btn-Follow-menu{
+    float: left;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+ border-radius: 4px;
+	background: none repeat scroll 0 0 #838383;
+    font-family: calibri;
+    font-size: 17px;
+ padding: 5px 0px 7px;
+    text-align: center;
+ width: 119px;
+color:#fff;
+text-shadow: 1px 1px 0 #000000;
+outline:none;
+}
+
+.btn-Follow-menu.following{
+background-color:#6DBD60;
+border-bottom-right-radius:4px;
+-moz-border-bottom-right-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+color:#fff;
+}
+
+.btn-Follow-menu.unfollowing{
+background-color:#d85050;
+border-bottom-right-radius:4px;
+-moz-border-bottom-right-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+color:#fff;
+}
+
+
+
+/*END: BOTON SEGUIR, SIGUIENDO, DEJAR DE SEGUIR PARA CUANDO ESTAS EN EL PERFIL DE OTRO. PASAR ESTE CODIGO A PROFILE*/
+
+
+
+#content-second-main{
+width: 600px;
+height: 92px;
+/*margin-left: 230px;*/
+margin-top: 35px;
+}
+
+
+
+/*CUADRO BLANCO DONDE MUESTRA INFO DEL USUARIO*/
+
+.icons-search-main {
+    position: relative;
+    top: -7px;
+}
+
+
+
+/*END: CUADRO BLANCO DONDE MUESTRA INFO DEL  USUARIO*/
+
+

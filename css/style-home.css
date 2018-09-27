@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+
+#body-welcome{
+background-image:url(../images/bg-main-menu.jpg);
+}
+
+
+#home-main-container {
+width: 100%;
+position: relative;
+overflow:hidden;
+}
+
+#home-box {
+position:relative;
+max-height:580px;
+}
+
+#in-word{
+position:relative;
+background-image:url(../images/in_logo.png);
+background-repeat:no-repeat;
+width:146px;
+height:154px;
+left:405px;
+}
+
+#spiter-word{
+position:relative;
+background-image:url(../images/spiter_logo.png);
+background-repeat:no-repeat;
+width:485px;
+height:192px;
+left:517px;
+top:-240px;
+}
+
+#cloud1{
+position:relative;
+background-image:url(../images/nube_1.png);
+background-repeat:no-repeat;
+width:510px;
+height:260px;
+left:-100px;
+top:-190px;
+}
+
+#cloud2{
+position:relative;
+background-image:url(../images/nube_2.png);
+background-repeat:no-repeat;
+width:312px;
+height:175px;
+left:1000px;
+bottom:390px;
+}
+
+#cloud3{
+position:relative;
+background-image:url(../images/nube_3.png);
+background-repeat:no-repeat;
+width:100px;
+height:70px;
+left:50px;
+top:-770px;
+}
+
+#cloud4{
+position:relative;
+background-image:url(../images/nube_4.png);
+background-repeat:no-repeat;
+width:145px;
+height:100px;
+left:1150px;
+bottom:290px;
+}
+
+#cloud5{
+position:relative;
+background-image:url(../images/nube_5.png);
+background-repeat:no-repeat;
+width:151px;
+height:87px;
+left:200px;
+top:-70px;
+}
+
+/*BOX-PHRASE*/
+
+
+#home-box .phrase-main {
+background: none repeat scroll 0 0 rgba(122, 157, 112, 0.3);
+    border-radius: 5px 5px 5px 5px;
+    left: 600px;
+    overflow: hidden;
+    padding: 3px 0;
+    position: absolute;
+    top: 165px;
+}
+
+
+#home-box .phrase-main .best-user-box{
+background: rgba(122, 157, 112, .30);
+border-bottom: 1px solid #AAAAAA;
+    height: 68px;
+    margin-top: 1px;
+    position: relative;
+    top: 2px;
+}
+
+.img-user-inspiter-main{
+    border: 2px solid #3c6534;
+}
+
+#home-box .phrase-main .inner-phrase {
+
+max-width: 460px;
+    padding: 10px 18px 28px 22px;
+
+}
+
+#home-box .phrase-main .inner-phrase h2 {
+color: white;
+text-shadow: 0 1px 1px #5a7453;
+font: 27px/33px;
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+margin-bottom: 10px;
+font-weight:normal;
+}
+
+
+#home-box .phrase-main .inner-phrase p {
+color: #f8f8f8;
+font-weight: bold;
+font-size: 15px;
+text-shadow: 0 1px 1px #5a7453;
+font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
+float: right;
+margin: 4px 50px 4px 0;
+ position: relative;
+}
+
+blockquote.phrase{
+	font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 1.3em;
+    font-style: italic;
+    margin: 20px 35px 10px;
+    text-align: center;
+	font-size:1.5em;
+	line-height:1.4em;
+}
+
+.avatar-inspiter-box-main{
+float:left;
+display:block;
+margin:9px 3px 7px 14px;
+}
+
+.avatar-user-info-main p{
+margin:0;
+}
+
+.name-complete-box-main {
+
+    color: #FFF;
+    font-family: "Arial Narrow",Arial,sans-serif;
+    font-size: 15px;
+    text-shadow: 0 1px 1px #5a7453;
+}
+
+.username-box-main {
+
+    -moz-transition: all 250ms linear 0s;
+    color: #FFF;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.avatar-user-info-main {
+    float: left;
+    margin-top: 6px;
+    max-width: 250px;
+    padding-left: 10px;
+}
+
+.comi-background-right {
+  
+  background: url("../images/comi-left-right.png") -22px 0 no-repeat;
+  position:absolute;
+  margin: 8px 0 0 465px;
+  width:24px;
+  height:20px;
+}
+
+
+.comi-background-left {
+
+   background: url("../images/comi-left-right.png") 0 0 no-repeat;
+   position:absolute;
+   margin:8px 0 0 14px;
+   width:24px;
+   height:20px;
+}
+
+#FollowMe-Twitter{
+    background-image: url("../images/button-Follow.png");
+    background-position: 0 -41px;
+    background-repeat: no-repeat;
+    float: left;
+    height: 41px;
+    left: 482px;
+    margin-right: 10px;
+    position: absolute;
+    top: 537px;
+    width: 223px;
+}
+
+#FollowMe-Face{
+   background-image: url("../images/button-Follow.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    float: left;
+    height: 41px;
+    left: 253px;
+    margin-right: 10px;
+    position: absolute;
+    top: 535px;
+    width: 226px;
+}
+/*END: BOX-PHRASE*/

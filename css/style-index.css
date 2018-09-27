@@ -1,0 +1,679 @@
+@charset "utf-8";
+/* CSS Document */
+
+.indexBody{
+    background-color: #1E1D1B;
+}
+
+.navIndex{
+    margin: 0px!important;
+    position: relative;
+    z-index: 1000;
+}
+
+/*PRIMER BLOQUE: FRASE INSIGNIA DE INSPITER, EFECTO CAMBIO DE COLOR*/
+
+.Oneblock{
+    height: 335px;
+    padding-top: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.effectColor{
+    background: url("../images/effectImage.png") no-repeat scroll center top / 100% 100% transparent;
+    background-color: #60915B;
+}
+
+.InspiterPhraseIns{
+    margin: 0 auto;
+    width: 952px;
+}
+
+.InspiterPhraseIns h1{
+    color: rgba(255, 255, 255, 0.88);
+    font-family: calibri;
+    font-size: 2.6em;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 0.9em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.sign_up{    
+    /*background-color: rgba(226, 231, 234, 0.8);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);*/
+    height: 88px;
+    margin: 35px auto;
+    padding: 25px 25px 20px;
+    position: relative;
+    width: 507px;
+    z-index: 4;
+}
+
+.inputIndex{
+    background: rgb(221,229,237); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(221,229,237,1) 0px, rgba(242,243,244,1) 100%)!important; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0px,rgba(221,229,237,1)), color-stop(100%,rgba(242,243,244,1)))!important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(221,229,237,1) 0px,rgba(242,243,244,1) 100%)!important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(221,229,237,1) 0px,rgba(242,243,244,1) 100%)!important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(221,229,237,1) 0px,rgba(242,243,244,1) 100%)!important; /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(221,229,237,1) 0px,rgba(242,243,244,1) 100%)!important; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dde5ed', endColorstr='#f2f3f4',GradientType=0 )!important; /* IE6-9 */
+    border: 1px solid rgba(0, 0, 0, 0.8)!important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.36) inset, 0 1px 0 rgba(255, 255, 255, 0.15)!important;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.36) inset, 0 1px 0 rgba(255, 255, 255, 0.15)!important;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.36) inset, 0 1px 0 rgba(255, 255, 255, 0.15)!important;
+    -webkit-border-radius: 5px!important;
+    -moz-border-radius: 5px!important;
+    border-radius: 5px!important;
+    font-size: 17px!important;
+    height: 27px!important;
+    line-height: 1.1!important;
+    padding:  6px 6px 5px!important;
+    width: 237px!important;
+}
+
+.sign_up span{
+    position: absolute;
+    top: 3px;
+}
+
+.textForget{
+    color: #FFF!important;
+}
+
+.textForget:hover{
+    color: #FFF!important;
+    text-decoration: underline!important;
+}
+
+
+.faceBtnIndex, .LoginBtnIndex{
+    width: 180px!important;
+    display: inline-block!important;
+}
+
+.faceBtnIndex{
+    border: 1px solid rgba(0, 0, 0, 0.5)!important;
+}
+
+.LoginBtnIndex{
+    margin: -1px 0 0 71px !important;
+    font-size: 13px!important;
+    padding: 9px 0 11px!important;
+    background-color: #57B750!important;
+    border: 1px solid rgba(0, 0, 0, 0.7)!important;
+}
+
+.inputIndex[placeholder]{
+    color:#7B8084;
+}
+
+.register-btn-index{
+padding: 6px 12px;
+margin: 5px 175px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-moz-box-shadow: 0 0 0 1px #eee inset, 0 1px #eee;
+border: 1px solid #353535;
+background: #DDD;
+color: #494949;
+text-shadow: 0 1px white;
+font:11px "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-weight: bold;
+-webkit-transition: background .5s linear;
+-moz-transition: background .5s linear;
+text-shadow: 0 1px #F0F0E0;
+}
+
+.register-btn-index:hover {
+color: #494949;
+background: #F2F2F2;
+-moz-box-shadow: 0 0 0 1px #f4f4f4 inset, 0 1px 1px rgba(0,0,0,.1);
+}
+
+.posted_by{
+    bottom: 0;
+    left: 2%;
+    margin-bottom: 12px;
+    position: absolute;
+}
+
+.post_info{
+    position: relative;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: right;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.post_info a{
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: right;
+}
+
+.post_avatar{
+    background-position: 50% 50%;
+    background-size: cover;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    height: 24px;
+    padding: 0;
+    width: 24px;
+    margin: 0 0 0 8px;
+    vertical-align: -7px;
+    background-image: url("../images/sedavila_prueba_indexNew.jpg");
+}
+/*END: PRIMER BLOQUE: FRASE INSIGNIA DE INSPITER, EFECTO CAMBIO DE COLOR*/
+
+/*SEGUNDO BLOQUE: MINITUTORIAL Y RESUMEN DE QUE ES INSPITER*/
+.containerTuto{
+    background-color: #57B750;
+    background-image: url("../images/bg_secondBlock_top.png"), url("../images/bg_secondBlock_bottom.png");
+    background-origin: padding-box;
+    background-position: center top, center bottom;
+    background-repeat: repeat-x, repeat-x;
+    background-size: auto auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.containerTuto .row{
+    margin:0 auto 20px;
+    overflow: hidden;
+    width: 980px;
+}
+
+.row h1{
+    color:#E7E7E7;
+    line-height: 50px;
+    font-family: Calibri;
+    font-size: 31px;
+    line-height: 35px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #000000;
+}
+
+.row h1 strong{
+    color: #A7A7A7;
+    font-size: 38px;
+    text-shadow: 1px 2px 3px #000000;
+    font-weight: bold;
+}
+
+.imgMiniTuto, .textMiniTuto{
+    float: left;
+}
+
+.textMiniTuto{
+    color: #FFF;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 23px;
+}
+
+.row ul{
+    clear: both;
+    list-style: none;
+}
+
+.BlockTextMiniTuto{
+
+}
+
+.BlockImgMiniTuto{
+    margin: 95px 0 0 83px;
+}
+
+.tutotext1{
+    font-size: 31px;
+    margin-left: -19px;
+    margin-top: 50px;
+}
+
+.tutotext2{
+    margin-left: 76px;
+    margin-top: 19px;
+    width: 236px;
+}
+
+.blocktext1{
+    font-size: 27px!important;
+    margin-left: -27px!important;
+    margin-top: 13px!important;
+}
+
+.blocktext2{
+    font-size: 22px!important;
+    margin-left: 42px!important;
+    width: 300px!important;
+}
+
+.blocktext3{
+    font-size: 25px!important;
+    margin-left: 27px!important;
+    margin-top: 11px!important;
+}
+
+.tutotext3{
+    margin-left: 63px;
+    margin-top: 29px;
+    width: 328px;
+}
+
+.tuto1{
+    background-image: url('../images/MiniTutoIcons.png');
+    background-repeat: no-repeat;
+    height: 110px; 
+    width: 108px;
+}
+
+.tuto2{
+    background-image: url("../images/MiniTutoIcons.png");
+    background-position: 152px 325px;
+    height: 31px;
+    margin: 40px 0 0 30px;
+    width: 148px;
+}
+
+.tuto3{
+    background-image: url("../images/MiniTutoIcons.png");
+    background-position: 339px -18px;
+    height: 78px;
+    margin: 3px 0 0 30px;
+    width: 147px;    
+}
+
+.tuto4{
+    background-image: url("../images/MiniTutoIcons.png");
+    background-position: -150px 214px;
+    height: 84px;
+    margin: 13px 0 0 30px;
+    width: 169px; 
+}
+
+.tuto5{
+    background-image: url("../images/MiniTutoIcons.png");
+    background-position: 548px -6px;
+    height: 140px;
+    margin: 3px 0 0 30px;
+    width: 175px;    
+}
+
+.tuto6{
+    background-image: url("../images/MiniTutoIcons.png");
+    background-position: -3px 208px;
+    height: 100px;
+    width: 104px;   
+}
+
+.separateBlock{ 
+    margin-top: 300px;
+    position: relative;
+}
+
+.lineSeparate{
+    border-top: 1px dashed #303030;
+    height: 0;
+    margin: 0 auto;
+    width: 840px;
+}
+
+.OrText{
+    background-image: url("../images/MiniTutoIcons.png");
+    background-position: -360px 208px;
+    color: #FFFFFF;
+    font-size: 35px;
+    height: 45px;
+    line-height: 39px;
+    position: absolute;
+    right: 460px;
+    top: -22px;
+    width: 45px;
+}
+/*END: SEGUNDO BLOQUE: MINITUTORIAL Y RESUMEN DE QUE ES INSPITER*/
+
+/*TERCER BLOQUE: LO QUE ENCONTRARAS EN INSPITER: IMAGENES*/
+
+.ThreeBlock{
+    position: relative;
+    min-height: 1544px;
+}
+
+.TitleBlock{
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.7) 63%, rgba(0,0,0,0.39) 78%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(63%,rgba(0,0,0,0.7)), color-stop(78%,rgba(0,0,0,0.39)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.7) 63%,rgba(0,0,0,0.39) 78%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0.7) 63%,rgba(0,0,0,0.39) 78%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.7) 63%,rgba(0,0,0,0.39) 78%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 63%,rgba(0,0,0,0.39) 78%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */height: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.TitleBlockFooter{
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 37%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(37%,rgba(0,0,0,0.7))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 37%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 37%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 37%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 37%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+    bottom: 180px;
+    height: 200px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.wraptext{
+    margin: 50px auto 0;
+    width: 431px;
+}
+
+.TitleBlock span, .TitleBlockFooter span{
+    color: #FFFFFF;
+    font-size: 45px;
+    left: 4%;
+    position: relative;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.9);
+    top: 50px;
+}
+
+.TitleBlockFooter span{
+    color: #FFFFFF;
+    font-size: 32px;
+    position: relative;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.9);
+}
+
+.containerImagesIndex{
+margin: 0 auto;    
+}
+
+.ImagesIndex{
+    border: 1px solid #000;
+    width: 330px;
+}
+
+.TextIndex{
+    background-color: #FFFFFF;
+}
+
+.TextIndex .comillas-background-right{
+    margin: 10px 0 0 300px !important;
+}
+
+.TextIndex .comillas-background-left{
+    margin: 9px 0 0 14px!important;
+}
+
+.TextIndex .inner-phrase .pullquote{
+    font-size: 1.3em!important;
+    margin: 25px 45px 10px!important;
+}
+
+.thumbIndex{
+    bottom: 0;
+    left: 7%;
+    margin-bottom: 10px;
+    position: absolute;
+}
+
+.footerBg{
+    position: absolute; 
+    bottom: 0px; 
+    height: 60px;
+    width: 330px; 
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+
+.footerBgText{
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+    bottom: 0;
+    height: 46px;
+    position: absolute;
+    width: 330px;
+}
+
+.phraseIndex{
+    min-height: 50px;
+    margin-bottom: 40px;
+}
+
+.autorTextIndex{
+    position: relative; 
+    height: 26px;
+}
+
+.autorTextIndex a{
+    margin: 4px 30px 4px 0!important;
+}
+.ImageMoreBig{
+    /*width: 400px!important;*/
+}
+/*END: TERCER BLOQUE: LO QUE ENCONTRARAS EN INSPITER: IMAGENES*/
+
+/*CUARTO BLOQUE: INVITAR A REGISTRARSE*/
+
+.InviteRegiterBlock{
+    background: url("../images/effectImage.png") no-repeat scroll center top / 100% 100% #00A5F0;
+    border-top: 1px solid #000000;
+    padding: 124px 0 106px;
+    position: relative;
+    z-index: 1;
+}
+
+.textInviteBlock{
+    background-color: rgba(12, 20, 28, 0.4);
+    color: #FFFFFF;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    width: 900px;
+    text-shadow: 0 1px 1px #000000;
+ }   
+
+ .buttonInviteBlock{
+    margin: 0 auto;
+    width: 270px;
+ }
+ 
+ .textInviteBlock h1{
+    font-size: 38px;
+ }
+ 
+ .textInviteBlock h2{
+    font-size: 29px;
+ }
+ 
+ .buttonRegisterInvite{
+    border: 1px solid rgba(0, 0, 0, 0.65);
+    border-radius: 6px 6px 6px 6px;
+    bottom: 0;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.6) inset;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 27px;
+    font-weight: bold;
+    height: 37px;
+    line-height: 34px;
+    margin: 18px 0 18px 10px;
+    padding: 10px 20px 7px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.32);
+    background: rgb(123,214,111); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(123,214,111,1) 0px, rgba(92,196,111,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0px,rgba(123,214,111,1)), color-stop(100%,rgba(92,196,111,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(123,214,111,1) 0px,rgba(92,196,111,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(123,214,111,1) 0px,rgba(92,196,111,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(123,214,111,1) 0px,rgba(92,196,111,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(123,214,111,1) 0px,rgba(92,196,111,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bd66f', endColorstr='#5cc46f',GradientType=0 ); /* IE6-9 */
+
+ }
+ 
+ .buttonRegisterInvite:hover{
+    box-shadow: 0 0 2px 0 #FFFFFF;
+    color: #FFFFFF;
+ }
+
+/*END: CUARTO BLOQUE: INVITAR A REGISTRARSE*/
+
+
+/*CUARTO BLOQUE: FRASES GRAFICAS*/
+
+
+.BlockPhraseGraph{
+    position: relative;
+    z-index: 1;
+    margin-top: -228px;
+}
+
+.ContainerPhraseGraph{
+    height: 415px;
+    margin: 40px auto 0;
+    position: relative;
+    width: 895px;
+}
+
+.EditPhrase{
+    position: relative;
+    top: 0;
+    width: 300px;
+}
+
+.TitleEditPhrase{
+    margin-bottom: 20px;
+}
+
+.textEditShow{
+    float: none;
+}
+.PhraseGraphImage{
+    background-image: url("../images/PhraseGraphExample.png");
+    background-repeat: no-repeat;
+    height: 280px;
+    width: 280px;
+}
+
+.posSharePhrase{
+    position: absolute;
+    right: -95px;
+    top: 20px;
+    width: 680px;
+}
+
+.boxShare{
+    background-image: url("../images/MiniTutoIcons.png");
+    background-position: -420px -127px;
+    background-repeat: no-repeat;
+    height: 230px;
+    left: 165px;
+    position: absolute;
+    top: 88px;
+    width: 230px;
+}
+
+.posLiSocial ul{
+    list-style: none;
+    margin: 0px!important;
+}
+
+.textShare{
+    left: 420px;
+    position: absolute;
+    top: 40px;
+    width: 300px;
+}
+
+.socialMedia{
+    display: inline-block;
+    margin-left: 10px;
+    background-image: url("../images/MiniTutoIcons.png");
+    background-repeat: no-repeat;
+    height: 43px;
+    width: 43px;
+}
+
+.arrowsShare{
+    background-image: url("../images/MiniTutoIcons.png");
+    background-position: -534px -42px;
+    background-repeat: no-repeat;
+    height: 30px;
+    position: relative;
+    top: 185px;
+    width: 151px;
+}
+
+.posLiSocial{
+    left: 450px;
+    position: absolute;
+    top: 260px;
+    width: 167px;
+}
+
+.textMiniTuto h1{
+    font-size: 28px!important;
+    line-height: 30px!important;
+}
+
+.socialMedia.face{
+ background-position: -3px -267px;  
+}
+
+.socialMedia.instagram{
+ background-position: -47px -267px;  
+}
+
+.socialMedia.google{
+ background-position: -91px -267px;     
+}
+
+.socialMedia.twitter{
+ background-position: -135px -267px;  
+}
+
+.socialMedia.pinterest{
+ background-position: -178px -267px;  
+}
+
+.socialMedia.tumblr{
+ background-position: -221px -267px;  
+}
+/*END: CUARTO BLOQUE: FRASES GRAFICAS*/

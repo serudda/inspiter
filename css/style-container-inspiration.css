@@ -1,0 +1,252 @@
+
+
+/*CONTENEDORES DE TEXTO PEQUEÑOS*/
+
+/*CONTENEDOR*/
+.text-inspi-box-small{
+width: 430px !important;
+/*float: left;*/ 
+margin: 0px 10px 0px 0px;
+}
+
+.text-inspi-box-small .phrase-box{
+ width: 416px !important;
+  /*padding:0!important;*/
+	overflow: hidden;
+}
+
+.mediaPadd{
+ padding:0!important;
+ cursor: -webkit-zoom-in; 
+ cursor: -moz-zoom-in;
+}
+
+.video .mediaPadd{
+    cursor:pointer;
+}
+
+.mediaPadd .inner-phrase img{
+ display: block;
+}
+
+span.post-video-play {
+display: block;
+position: absolute;
+top: 0;
+width: 72px;
+height: 100%;
+margin: auto;
+left: 0;
+right: 0;
+background: no-repeat url(../images/play-video.png) center center;
+z-index: 3;
+}
+
+span.loadingPost{
+    color: #8A8A8A;
+    display: block;
+    font-family: calibri;
+    font-size: 23px;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 107px;
+    z-index: -1;
+}
+
+.loadingZoom{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background: url("../images/ajax-loader-54.gif") no-repeat scroll center center transparent;
+    z-index: 0;
+}
+
+.ProfileImageBlock .loadingPost{
+    font-size: 19px!important;
+    width: 87px!important;
+    top: 47%!important;
+}
+
+.mediaPadd .inner-phrase{
+    position: relative;
+    z-index: 0;
+}
+
+.lazy-load, .lazy-loaded {
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  /*opacity: 0;*/
+}
+
+.lazy-loaded { opacity: 1; }
+
+.text-inspi-box-small .phrase-box .inner-phrase .pullquote{
+    font-size: 1.2em!important;
+    margin: 20px 40px 10px !important;
+}
+
+.text-inspi-box-small .phrase-box .inner-phrase .autor-name{
+ margin: 4px 70px 10px 0!important;
+}
+
+.text-inspi-box-small .border-div {
+    width: 430px !important;
+}
+
+.text-inspi-box-small .extra-tile-info {
+    height: 45px!important;
+}
+
+.text-inspi-box-small .extra-tile-info .avatar-inspiter{
+    height: 30px!important;
+    margin: 4px 0 0 7px!important;
+    width: 30px!important;
+}
+
+.text-inspi-box-small .extra-tile-info .avatar-inspiter a .img-user-inspiter{
+    height: 30px!important;
+    width: 30px!important;
+
+}
+
+.text-inspi-box-small .extra-tile-info .textCountFav{
+ left: 190px !important;
+ bottom: -3px!important;
+}
+
+.text-inspi-box-small .extra-tile-info .social-icons-share{
+  margin: 8px 7px 0 10px!important;
+}
+
+.imageInsp{
+   -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+/*.mediaPadd .imgLd{
+ opacity: 1;
+ background-image: url("../images/ajax-loader.gif");
+ background-position: 50% center;
+ background-repeat: no-repeat;
+ -moz-transition: opacity 2s ease 0s;
+}*/
+
+.FooterImgText{
+background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 5px;
+    position: absolute;
+    width: 420px;
+}
+
+.title-image{
+  top: -5px;
+	display: none;
+}
+
+.description-image, #footer-text{
+bottom: 0; 
+}
+
+.description-image{
+ display: none;
+}
+
+#footer-text{
+ 
+ display: none;
+}
+
+
+.text-FooterImgText{
+    color: #FFFFFF;
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    text-shadow: 0 1px 0 #000000;
+}
+
+#textTitleImage{
+ font-size: 16px;
+}
+
+#textDescriptionImage{
+ font-size: 13px;
+}
+
+#FooterTextInspiration{
+   float: right;
+    margin: 4px 20px 4px 0;
+}
+
+/*END:CONTENEDOR*/
+
+/*CONTENEDOR DE COMENTARIOS PEQUEÑOS*/
+.smallbox .inspired-notice{
+ margin: 0 0 0 65px!important;
+}
+
+ul.smallul{
+margin: 0!important; 
+}
+
+ul.smallul p{
+ font-size: 12px!important;
+}
+
+.smallul .loadingInspired{
+ margin: 23px 200px!important;
+}
+
+.smallul .inspired-notice{
+ margin: 0 0 0 120px!important;
+}
+
+.smallul .comment-block h4 {
+    width: 328px!important;
+}
+
+/*FORM DEL CONTENEDOR DE COMENTARIOS PEQUEÑO*/
+.addsmallcontainer{
+ padding: 10px 25px 6px 18px!important;
+ width: 377px!important;
+}
+
+.addsmallcontainer textarea{
+ width: 322px!important;
+}
+
+.NoComment{
+    background: none repeat scroll 0 0 #C3C3C4!important;
+    padding: 10px 37px 10px 38px !important;
+    width: 345px !important;
+}
+
+.TextNoComment{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 !important;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+/*END:FORM DEL CONTENEDOR DE COMENTARIOS PEQUEÑO*/
+
+
+
+/*END:CONTENEDOR DE COMENTARIOS PEQUEÑOS*/
+
+/*CONTENEDORES DE TEXTO PEQUEÑOS*/

@@ -1,0 +1,719 @@
+.wrapper-pri.conf{
+ width: 680px;
+ padding: 36px 102px;
+ margin-bottom: 80px;
+ box-shadow: 0 1px 4px #999999;
+}
+
+.blockTop{
+ margin: 75px auto 0; 
+}
+
+.conf h3{
+ border-bottom: 2px dashed #A7A7A7;
+ font: bold 28px/30px Calibri;
+ margin-bottom: 35px;
+ padding-bottom: 8px;
+}
+
+#styleh3
+{margin-bottom: 42px!important;}
+
+.conf label{
+ margin-bottom: 5px;
+ font-size: 18px;
+ line-height: 25px;
+ clear: left;
+}
+
+.BlockUserInfo{
+ margin-bottom: 25px;
+}
+
+.BlockUserInfo div{
+ margin-bottom: 10px;
+}
+
+.BlockUserInfo dl{
+ /*width: 315px;*/
+}
+
+.BlockUserInfo dt{
+ clear: left;
+ float: left;
+ font-size: 1.3em;
+ font-weight: normal;
+ width: 102px;
+ text-align: left;
+ margin-bottom: 15px;
+}
+
+.BlockUserInfo dd{
+ color: #808080;
+ float: left;
+ font-size: 1.3em;
+}
+
+.BlockUserInfo dd a{
+ color:#333;
+ font-size: 15px;
+}
+
+.BlockUserInfo span{
+ display: inline-block;
+ font-size: 16px;
+ color: #4C703C;
+ margin-left: 103px;
+ position: relative;
+ width: 280px;
+ float: right;
+}
+
+.BlockConfAccount span{
+ display: inline-block;
+ font-size: 16px;
+ color: #4C703C;
+ margin-left: 103px;
+ position: relative;
+ width: 280px;
+ float: right;
+}
+
+.conf input{
+    width:290px;
+    font-size:15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding:6px;
+}
+
+.PosUserName{
+ border-bottom: 1px solid #CCC;
+ height: 88px;
+ margin-bottom: -6px!important;
+}
+
+.PosCity{
+ height: 71px;
+}
+
+.PosAbout{
+ border-bottom: 1px solid #CCC;
+}
+
+.textareaAbout{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset, 0 1px 0 rgba(255, 255, 255, 0.8);
+    height: 120px;
+		font-size: 15px;
+    line-height: 19px;
+    overflow: auto;
+    padding-bottom: 3px;
+    padding-left: 4px;
+    resize: none;
+    width: 295px;
+		border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+		margin-bottom: 20px;
+}
+
+#labelNameConf{
+ margin-top: 19px;
+}
+
+#NewPhoto-Position:before {
+    content: " ";
+    display: block;
+    height: 60px;
+    margin-top: -50px;
+    visibility: hidden;
+}
+
+#NewPhoto-Position{
+ margin-bottom: 45px;
+}
+
+#Image-Pos{
+ position: relative;
+}
+
+#fotografia{
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+    height: 202px;
+    position: relative;
+    width: 201px;
+    z-index: 1;
+}
+
+.previewPhotoBlock{
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    height: 202px;
+    overflow: hidden;
+    position: relative;
+    width: 201px;
+}
+
+#ChangePos {
+margin-top:5px;
+background-color: rgba(0,0,0,0.6);
+position: absolute;
+top: 139px;
+width:203px;
+z-index: 2;
+}
+
+#ChangePos a:hover{
+text-decoration:underline;
+}
+
+.loadPhotoIns{
+     left: 90px;
+    position: absolute;
+    top: 80px;
+    z-index: 0;
+}
+
+#addImage{
+ color: #FFF;
+ float: left;
+ font-size: 16px;
+ margin-left: 22%;
+ padding: 5px;
+}
+
+#addImageFace{
+ background-color: #3B5998;
+ color: #FFF;
+ float: left;
+ font-size: 15px;
+ font-weight: bold;
+ margin-bottom: 4px;
+ margin-left: 4%;
+ padding: 5px 11px;
+}
+
+.loaderAjax img{
+ float: left;
+ margin-right: 6px;
+ margin-top: 5px;
+}
+
+
+/*MENSAJES DE VALIDACION (ALERT)*/
+
+.msgBox{
+   background-color: #FBB8B3;
+    color: #C53D32;
+    font-size: 15px;
+    padding: 6px 11px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    width: 280px;
+}
+
+.errorHidden{
+ display: none;
+}
+/*MENSAJES DE VALIDACION (ALERT)*/
+
+
+
+/*FRASE INSIGNIA*/
+
+.PosPhraseUser{
+ background-color: #F3F3F3;
+ border: 1px solid #D8D8D8;
+ position: relative;
+}
+
+.PosPhraseUser label{
+  color: #9A9A9A;
+  font-size: 21px;
+  font-weight: bold;
+	margin-left: 26px;
+  margin-top: 14px;
+  text-shadow: 0 1px #FFFFFF;
+}
+
+.PosPanelText{
+ background-color: #E4E4E4;
+ border-left: 1px solid #B2B2B2;
+ border-right: 1px solid #B2B2B2;
+ border-top: 1px solid #B2B2B2;
+ height: 30px;
+ margin: 13px 25px 0!important;
+ width: 625px;
+}
+
+.optionPanelText{
+ list-style: none;
+ margin: 1px;
+ outline: none;
+}
+
+.sepLine{
+ border-left: 1px solid #878787;
+ float: left;
+ height: 22px;
+ margin: 2px;
+ overflow: hidden;
+ outline: none;
+ width: 0;
+}
+
+.font_text_phrase{
+ float: left;
+ min-width: 85px;
+}
+
+#font-size-text{
+    font-size: 19px!important;
+}
+
+.font_text_phrase a{
+ padding: 4px 4px 4px 13px;
+ font-size: 15px;
+ display: block;
+ color: #646464;
+}
+
+.font_text_phrase a:hover{
+ background: #eeeeee; /* Old browsers */
+background: -moz-linear-gradient(top,  #eeeeee 0%, #e0e0e0 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#e0e0e0)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #eeeeee 0%,#e0e0e0 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #eeeeee 0%,#e0e0e0 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #eeeeee 0%,#e0e0e0 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #eeeeee 0%,#e0e0e0 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-9 */
+color: #242424;
+border-radius: 3px;
+border: 1px solid #A7A7A7;
+}
+
+.font_text_phrase a.actived{
+    background-color: #C7C7C7;
+    border: 1px solid #A7A7A7;
+    border-radius: 3px 3px 3px 3px;
+    color: #242424;
+}
+
+.ico-more-font{
+    background-image: url("../images/iconsIns.png");
+    background-position: -36px -91px;
+    background-repeat: no-repeat;
+    float: right;
+    height: 6px;
+    width: 8px;
+		margin: 6px 2px 0!important;
+}
+
+.ico-more-font.moreSize{
+    background-position: -36px -122px!important;
+}
+
+.font_text_phrase.size{
+    min-width: 42px;
+}
+
+.font_text_phrase.bold, .font_text_phrase.italic{
+ min-width: 33px;
+}
+
+.font_text_phrase.bold a{
+ font-family: Verdana;
+ font-weight: bold;
+ padding: 4px;
+ text-align: center;
+}
+
+.font_text_phrase.italic a{
+ font-family: Time New Roman;
+ font-style: italic;
+ padding: 4px;
+ text-align: center;
+}
+
+.list-option-phraseIn{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    display: none;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.2em;
+    position: absolute;
+    text-shadow: none;
+    white-space: normal;
+    width: 175px;
+    z-index: 2;
+}
+
+.list-option-font{
+  top: 83px;
+	 left: 25px;
+}
+
+.list-option-size{
+  top: 83px;
+	 left: 185px;
+}
+
+.smallfont{
+ font-size:1.3em!important; 
+}
+
+.normalfont{
+ font-size: 1.6em!important;
+}
+
+.bigfont{
+ font-size: 1.9em!important;
+}
+
+.biggestfont{
+ font-size: 2.3em!important;
+}
+
+.hugefont{
+    font-size: 2.7em!important;
+}
+
+.option-font{
+  padding: 10px 17px 10px 18px;
+  width: 140px;
+	margin-left: 0!important;
+	color: #000;
+	font-size: 1.5em;
+}
+
+.option-font:hover{
+ background-color: #E5E5E5;
+ margin-left: 0!important;
+}
+
+.Arial{
+ font-family: Arial;
+}
+.Asombro{
+    font-family: "Asombro";
+}
+.Calibri{
+ font-family: Calibri;
+}
+
+.TimesNewRoman{
+ font-family: TimesNewRoman;
+}
+.CourierNew{
+ font-family: Courier;
+}
+
+.ComicSans{
+    font-family: Comic Sans, Comic Sans MS;
+}
+
+.Futura{
+    font-family: "Futura";
+}
+.HandSean{
+	font-family: "HandSean";
+}
+.JennaSue{
+font-family: "JennaSue";
+}
+.Jellyka{
+font-family: "Jellyka";
+}
+.Impact{
+ font-family: Impact;
+}
+
+.Motion{
+	font-family: "Motion";
+}
+
+.PassingNotes{
+    font-family: "PassingNotes";
+}
+
+.Vampire{
+	font-family: "Vampire";
+}
+
+.LucidaSans{
+ font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;    
+}
+
+.changePhraseImage{
+	background-color: #F0EDED;
+    background: #fdfafb; /* Old browsers */
+		background: -moz-linear-gradient(top,  #fdfafb 0%, #f9f7f7 50%, #f6f3f4 50%, #f0eded 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfafb), color-stop(50%,#f9f7f7), color-stop(50%,#f6f3f4), color-stop(100%,#f0eded)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #fdfafb 0%,#f9f7f7 50%,#f6f3f4 50%,#f0eded 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #fdfafb 0%,#f9f7f7 50%,#f6f3f4 50%,#f0eded 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #fdfafb 0%,#f9f7f7 50%,#f6f3f4 50%,#f0eded 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #fdfafb 0%,#f9f7f7 50%,#f6f3f4 50%,#f0eded 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfafb', endColorstr='#f0eded',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #BBBBBB;
+		border-radius: 0 0.3em 0.3em 0;
+    -webkit-border-radius: 0 0.3em 0.3em 0;
+    -moz-border-radius: 0 0.3em 0.3em 0;
+    box-shadow: 0 1px rgba(255, 255, 255, 0.8), 0 1px rgba(255, 255, 255, 0.35) inset;
+    color: #524D4D;
+    cursor: pointer;
+    padding: 4px 10px;
+    position: absolute;
+    right: 26px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.9);
+    top: 12px;
+}
+
+.changePhraseImage:hover{
+ color: #524D4D;
+}
+
+.changePhraseImage:active{
+ box-shadow: 0 1px 2px rgba(34, 25, 25, 0.25) inset, 0 0 3px rgba(232, 230, 230, 0.5);
+}
+
+.changePhraseImage.default{
+	border-radius: 0.3em 0 0 0.3em;
+	-webkit-border-radius: 0.3em 0 0 0.3em;
+	-moz-border-radius: 0.3em 0 0 0.3em;
+   right: 122px;
+}
+
+.ImagePhraseInBlock{
+    background-color: #444444;
+    background-image: url("../images/noise-2.png");
+    display: block;
+    height: 201px;
+    position: absolute;
+    width: 625px;
+    z-index: 1;
+}
+
+.ImagePhraseIn{
+ position: absolute;
+ cursor: n-resize;
+ z-index: 1;
+}
+
+#textPhraseIn, #textPhraseGraph{
+     font-size: 1.5em;
+    margin:0!important;
+		cursor:move;
+		position:absolute!important;
+		font-style: normal;
+		font-weight: normal;
+}
+
+#textPhraseIn{
+  max-width: 500px;
+  line-height: 26px;
+}
+
+#textPhraseGraph{
+    line-height: normal;
+}
+
+#textPhraseIn:hover, #textPhraseGraph:hover {
+ background-color: rgba(0, 0, 0, 0.77);
+}
+
+#textPhraseInAuthor, #textPhraseAuthorGraph {
+font-size: 20px;
+margin: 0!important;
+}
+
+#textPhraseInAuthor{
+padding: 10px !important;
+}
+
+#textPhraseAuthorGraph{
+width:350px!important;
+line-height: normal!important;
+}
+
+#textPhraseInAuthor:hover, #textPhraseAuthorGraph:hover {
+ background-color: rgba(0, 0, 0, 0.77);
+}
+
+#Image-Pos-Phrase{
+    background-color: #FFFFFF;
+    border: 1px solid #989898;
+    height: 201px;
+    margin: 0 0 0 25px !important;
+    position: relative;
+    width: 625px;
+		overflow: hidden;
+}
+
+.ImgDefault{
+ background-color: #414141;
+    height: 0px;
+    margin-left:25px;
+		margin-right: 25px;
+		margin-bottom: 10px;
+    width: 627px;
+		overflow: hidden;
+}
+  
+.ImageDefaultList{
+  background-image: url("../images/imageDefault.png");
+	background-repeat: no-repeat;
+	float: left;
+	height: 106px;
+	margin-bottom: 0!important;
+	width: 156px;
+	cursor: pointer;
+}
+
+.img0{
+ background-position: -311px 4px;
+}
+
+.img1{
+ background-position: -468px 4px;
+}
+
+.img2{
+ background-position: -154px -104px;
+}
+
+.img3{
+ background-position: -310px -104px;
+}
+
+.img4{
+ background-position: -467px -104px;
+}
+
+.img5{
+ background-position: -2px -104px;
+}
+
+.img6{
+ background-position: -155px 4px;
+}
+
+.img7{
+ background-position: 1px 4px;
+}
+
+.PosPhraseTextArea{
+ margin: 10px auto!important;
+ width: 630px;
+}
+
+.PosNoteInfo{
+    margin-bottom: 0px; 
+    float: left; 
+    margin-left: 24px; 
+    background-color: rgb(248, 252, 169); 
+    border: 1px solid rgb(242, 189, 43); 
+    padding: 2px 7px; 
+    width: 293px; 
+    height: 38px; 
+    font-family: calibri; 
+    font-size: 14px; 
+    position: relative; 
+    bottom: 4px;
+}
+
+.NotePhraseGraph{
+    margin-left: 0px!important;
+    bottom: 10px!important;
+    height: 95px!important;
+    display: none;
+    padding: 9px 18px !important;
+    position: absolute !important;
+    width: 252px !important;
+}
+
+.PosAuthorPhraseIn{
+    height: 38px;
+    margin-left: 403px;
+    width: 250px;
+}
+
+.PosNoteInfo strong{
+    font-size: 16px; 
+    margin-right: 5px;
+}
+.authorIn{
+ float: right;
+    height: 23px!important;
+    position: relative;
+    width: 240px!important;
+}
+
+.phraseIn{
+ border-radius: 3px 3px 3px 3px;
+ height: 34px;
+ width: 619px;
+}
+/*END: FRASE INSIGNIA*/
+
+#inputPassword1Conf, #inputPassword2Conf, #inputPassword3Conf{
+width: 240px;
+    font-size:13px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding:6px;
+	font-size: 13px;
+}
+
+#inputPassword3Conf{
+ margin-bottom: 20px;
+}
+
+.forgot{
+ font-size: 13px!important;
+}
+
+.title-social-block{
+  border-top: 1px solid #CCCCCC;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.buttonFormConfig{
+  margin-top: 42px;
+	height: 38px;
+}
+
+.btn_cancel_config{
+  border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 17px !important;
+    font-weight: bold !important;
+    padding: 4px 10px;
+    text-align: center;
+    vertical-align: middle;
+		 margin-left: 20px;
+    padding: 10px !important;
+}
+
+#btn_cancel_config:hover{
+ color: #6B6B6B!important;
+}
+
+#btn_save_config,#btn_cancel_config{
+ float: right;
+}
+
+#btn_save_config{
+ padding: 10px !important;
+}
+
+.PosSocialBlock{
+ border-bottom: 1px solid #CCCCCC;
+    height: 110px;
+}

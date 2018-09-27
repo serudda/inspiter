@@ -1,0 +1,254 @@
+#confirmOverlay{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:url('ie.png');
+    background: -moz-linear-gradient(rgba(11,11,11,0.1), rgba(11,11,11,0.6)) repeat-x rgba(11,11,11,0.2);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(11,11,11,0.1)), to(rgba(11,11,11,0.6))) repeat-x rgba(11,11,11,0.2);
+		z-index:100000;
+}
+
+.closex{
+    background: url("../images/closex.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 36px;
+    margin: 16px 0 0;
+    position: absolute;
+    width: 36px;
+    z-index: 120;
+    top: -30px;
+    left: 380px;
+}
+
+.closex:hover{
+    background: url("../images/closex.png") no-repeat scroll -37px 0 transparent;
+}
+
+#confirmBox{
+    background:url('body_bg.jpg') repeat-x left bottom #FBFBFB;
+    width:400px;
+    min-height: 184px;
+    position:fixed;
+    left:50%;
+    top:50%;
+    margin:-130px 0 0 -230px;
+    border: 1px solid rgba(33, 33, 33, 0.6);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+    -webkit-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+    /*overflow: hidden;*/		
+}
+
+#confirmBox h1,
+#confirmBox p{
+    /*background:url(../images/header_bg.jpg) repeat-x left bottom #f5f5f5;*/
+    background-color: #8DCD83;
+    padding: 12px 31px;
+    color:#666;
+
+}
+
+#confirmBox h1{
+    
+    font-size: 20px;
+    background-color: #8DCD83;
+  padding: 5px 15px;
+  border-bottom: 1px solid #5C5C5C;
+  background-image: -ms-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(top, #62c462, #51a351);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+#confirmBox p{
+    background:none;
+    font-size:17px;
+    line-height:1.4;
+    margin: 0 0 2px;
+		padding: 20px 41px 0;
+    text-align: center;
+}
+
+#confirmButtons{
+    padding:15px 0 25px;
+    text-align:center;
+}
+
+.btn-success.alertOffSuc, .btn-cancel-option.alertOffSuc{
+    padding: 10px 5px!important;
+}
+
+.btn-cancel-option.alertOffCan{
+    margin-top: 10px!important;
+    width: 250px!important;
+}
+
+#confirmBox .button{
+    display:inline-block;
+    background:url(../images/buttons.png) no-repeat;
+    color:white;
+    position:relative;
+    height: 33px;
+
+    font:17px/33px 'Cuprum','Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+
+    margin-right: 15px;
+    padding: 0 35px 0 40px;
+    text-decoration:none;
+    border:none;
+}
+
+#btn-alert{
+    font-size: 16px;
+    margin-right: 5px;
+    padding: 5px;
+    width: 116px;
+}
+#confirmBox .button:last-child{	margin-right:0;}
+
+#confirmBox .button span{
+    position:absolute;
+    top:0;
+    right:-5px;
+    background:url(../images/buttons.png) no-repeat;
+    width:5px;
+    height:33px
+}
+
+#confirmBox .blue{				background-position:left top;text-shadow:1px 1px 0 #5889a2;}
+#confirmBox .blue span{			background-position:-195px 0;}
+#confirmBox .blue:hover{		background-position:left bottom;}
+#confirmBox .blue:hover span{	background-position:-195px bottom;}
+
+#confirmBox .gray{				background-position:-200px top;text-shadow:1px 1px 0 #707070;}
+#confirmBox .gray span{			background-position:-395px 0;}
+#confirmBox .gray:hover{		background-position:-200px bottom;}
+#confirmBox .gray:hover span{	background-position:-395px bottom;}
+
+.btn-cancel-option{
+ background-color: #E4E4E4;
+    color: #6B6B6B;
+}
+/*ALERT PERSONALIZADO: CUANDO SE CREA UNA FRASE EXITOSA DESDE EL CONTENEDOR GRANDE*/
+
+.reqCreatedPhrase{
+    position:absolute;
+    margin:1px 0 0 11px;
+    font-size:18px;
+    padding: 8px 10px 8px 14px;
+    border-top-right-radius:8px;
+    -moz-border-top-right-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    border-top-left-radius:8px;
+    -moz-border-top-left-radius: 8px;
+    -webkit-border-top-left-radius: 8px;
+    background-color:#6EF898;
+    filter:alpha(opacity=60);
+    -moz-opacity:.60;
+    opacity:.60;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    color:#002200;
+    display:inline;
+    height: 21px;
+    text-align: center;
+    width: 455px;
+}
+
+.reqCreatedPhraseSmall{
+    position:absolute;
+    margin:1px 0 0 1px;
+    font-size:15px;
+    padding: 8px 10px 8px 14px;
+    border-top-right-radius:3px;
+    -moz-border-top-right-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-left-radius:3px;
+    -moz-border-top-left-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    background-color:#6EF898;
+    filter:alpha(opacity=60);
+    -moz-opacity:.60;
+    opacity:.60;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    color:#002200;
+    display:inline;
+    height: 15px;
+    text-align: center;
+    width: 198px;
+    line-height: 14px;
+}
+
+
+.messageNavBar{
+    position:fixed;
+    margin:10px 331px;
+    font-size:15px;
+    padding: 8px 10px 8px 14px;
+    border-top-right-radius:3px;
+    -moz-border-top-right-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-left-radius:3px;
+    -moz-border-top-left-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    background-color:#6EF898;
+    filter:alpha(opacity=77);
+    -moz-opacity:.77;
+    opacity:.77;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    color:#002200;
+    display:inline;
+    height: 15px;
+    text-align: center;
+    line-height: 14px;
+}
+
+.message {
+    background: none repeat scroll 0 0 #FBB8B3;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 auto 16px;
+    padding: 10px 12px;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    width: 500px;
+}
+
+.message .message-text {
+   color: #C53D32;
+    display: block;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.message.success{
+ background: none repeat scroll 0 0 #C1F78F;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 auto 16px;
+    padding: 15px 20px;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    width: 484px;
+}
+
+
+.message.success .message-text {
+   color: #276313;
+    display: block;
+    font-size: 14px;
+		font-weight: bold;
+    line-height: 16px;
+    text-align: left;
+		margin-bottom: 10px;
+}
